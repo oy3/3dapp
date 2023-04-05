@@ -9,9 +9,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-
     <link href="assets/fontawesome/css/all.css" rel="stylesheet">
-
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 </head>
@@ -36,24 +34,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                            aria-expanded="false">
-                            Drinks
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" style="opacity: 0.8;">
-                            <a class="dropdown-item" href="#">Coca Cola</a>
-                            <a class="dropdown-item" href="#">Sprite</a>
-                            <a class="dropdown-item" href="#">Dr Pepper</a>
-                        </div>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="models.html">Models</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -61,9 +51,8 @@
     </header>
 
 
-
     <main role="main" class="flex-shrink-0">
-        <div class="container-fluid">
+        <div class="container-fluid mt-3">
             <div class="row">
                 <div class="col-xs-12 col-sm-12">
                     <div id="main_3d_image">
@@ -78,14 +67,15 @@
                 </div>
             </div>
 
-
-
-            <div class="row">
+            <div class="row mt-4">
                 <div class="col-sm-4 mb-4">
-                    <div class="card border-0 h-100">
-                        <img src="assets/images/coca_cola.jpg" class="card p-1 card-img-top" alt="">
+                    <div class="card bg-light border-0 h-100 shadow-sm">
+                        <div class="card m-2">
+                            <img src="assets/images/coca_cola.jpg" class="card-img-top p-1 img-fluid" alt="">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Coca Cola</h5>
+                            <h6>New York Harbour, 1886</h6>
                             <p class="card-text">It was 1886, John Pemberton, an Atlanta pharmacist, was inspired by
                                 simple
                                 curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it
@@ -93,36 +83,45 @@
                                 done, the mixture was combined with carbonated water and sampled by customers who all
                                 agreed
                                 - this new drink was something special!</p>
-                            <a href="#" class="btn btn-primary">Find out more...</a>
+                            <a href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola" class="btn btn-primary">Find
+                                out more...</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4 ol mb-4">
-                    <div class="card border-0 h-100">
-                        <img src="assets/images/sprite.jpg" class="card p-1 card-img-top" alt="">
+                    <div class="card bg-light border-0 h-100 shadow-sm">
+                        <div class="card m-2">
+                            <img src="assets/images/sprite.jpg" class="card-img-top p-1 img-fluid" alt="">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Sprite</h5>
+                            <h6>West Germany, 1959</h6>
                             <p class="card-text">First introduced in 1961, crisp, refreshing, clean-tasting Sprite is
                                 now
                                 the world's leading lemon and lime flavoured soft drink and is sold in more than 190
                                 different countries. Sprite Zero, part of our no sugar Zero range, offers the delicious
                                 lemon lime taste of Sprite without the sugar or calories.</p>
-                            <a href="#" class="btn btn-primary">Find out more...</a>
+                            <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite" class="btn btn-primary">Find out
+                                more...</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4 mb-4">
-                    <div class="card border-0 h-100">
-                        <img src="assets/images/dr_pepper.jpg" class="card p-1 card-img-top" alt="">
+                    <div class="card bg-light border-0 h-100 shadow-sm">
+                        <div class="card m-2">
+                            <img src="assets/images/dr_pepper.jpg" class="card-img-top p-1 img-fluid" alt="">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Dr Pepper</h5>
+                            <h6>Texas, 1885</h6>
                             <p class="card-text">Dr Pepper's unique, sparkling blend of 23 fruit flavours has been
                                 around
                                 for well over a century and it's still the same, with that distinctive flavour you just
                                 can't quite put your tongue on. It was created by Texas pharmacist Charles Alderton in
                                 1885.
                             </p>
-                            <a href="#" class="btn btn-primary">Find out more...</a>
+                            <a href="http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper" class="btn btn-primary">Find
+                                out more...</a>
                         </div>
                     </div>
                 </div>
@@ -136,11 +135,11 @@
                         <span>© Mobile Web 3D Applications</span>
                     </div>
 
-                    <p class="small">
+                    <!-- <p class="small">
                         2023 Season <br>
                         Oye - MSc Student <br>
                         All tutorials are created using <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/">Bootstrap 4.6</a>
-                    </p>
+                    </p> -->
 
                     <div class="navbar-text float-right social">
                         <a href="#">
@@ -162,7 +161,31 @@
         </footer>
     </main>
 
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Contact details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Temitope Oyeyinka, BN1 9BJ
+                    <br>Email: to277@sussex.ac.uk
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <form action="mailto:to277@sussex.ac.uk" method="post" enctype="text/plain">
+                        <input type="submit" value="Contact Email" class="btn btn-primary">
+                    </form>
 
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/popper.min.js"></script>

@@ -18,6 +18,15 @@
     src: url(../assets/fonts/Oswald-Regular.ttf);
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
 }
@@ -90,9 +99,9 @@ main h5 {
 
 .logo h1 {
     font-family: cocaColaFont;
-    font-size: 31px;
+    font-size: 41px;
     margin: 0;
-    margin-top: -10px;
+    margin-top: 0px;
     margin-bottom: -15px;
     float: left;
     padding-top: 0px;
@@ -102,8 +111,8 @@ main h5 {
 
 .logo h2 {
     font-family: cocaColaFont;
-    font-size: 31px;
-    margin-top: -6px;
+    font-size: 41px;
+    margin-top: 5px;
     margin-bottom: -15px;
     padding-top: 0px;
     padding-left: 0px;
@@ -112,10 +121,10 @@ main h5 {
 }
 
 .logo h3 {
-    font-family: OpenSans;
-    font-size: 18px;
-    margin-top: 0px;
-    margin-bottom: -5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 31px;
+    margin-top: 5px;
+    margin-bottom: 3px;
     padding-top: 0px;
     padding-left: 5px;
     float: left;
@@ -123,22 +132,25 @@ main h5 {
 
 .logo h3 span {
     font-size: 15px;
+    margin-left: -5px;
 }
 
 .logo p {
     text-align: center;
-    font-size: 7px;
-    margin-top: 22px;
+    font-size: 10px;
+    margin-top: 50px;
     margin-bottom: 0px;
     padding-top: 0px;
-    padding-left: 3px;
+    padding-left: 0px;
 }
 
 /* CSS rule to style the footer */
 .footer {
-    /* color: #030303;
-    background-color: #760003;
-     height: 50px; */
+    /* position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px; */
 }
 
 .navbar-text>a {
@@ -151,7 +163,9 @@ main h5 {
     /* text-decoration: none; */
 }
 
-.copyright {}
+.copyright {
+    font-size: 10px;
+}
 
 .social {}
 
@@ -183,7 +197,9 @@ main h5 {
         display: block;
     }
 
-    .copyright {}
+    .copyright {
+        font-size: 15px;
+    }
 
     .social i {
         font-size: 30px;
