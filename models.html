@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coca Cola</title>
 
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link href="assets/fontawesome/css/all.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <!-- x3dom -->
+    <link rel="stylesheet" href="assets/css/x3dom.css" />
+    <script src="assets/js/x3dom.js"></script>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -58,39 +61,67 @@
                     <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="coke-tab" data-toggle="tab"
-                                    data-target="#coke, #coke-desc" type="button" role="tab"
-                                    aria-controls="coke coke-desc" aria-selected="true">Coke</button>
+                                <button class="nav-link active" id="coke-tab" data-toggle="tab" data-target="#coke"
+                                    type="button" role="tab" aria-controls="coke" aria-selected="true"
+                                    onclick="swap('coke')">Coke</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="sprite-tab" data-toggle="tab"
-                                    data-target="#sprite, #sprite-desc" type="button" role="tab"
-                                    aria-controls="sprite sprite-desc" aria-selected="false">Sprite</button>
+                                <button class="nav-link" id="sprite-tab" data-toggle="tab" data-target="#sprite"
+                                    type="button" role="tab" aria-controls="sprite" aria-selected="false"
+                                    onclick="swap('sprite')">Sprite</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pepper-tab" data-toggle="tab"
-                                    data-target="#pepper, #pepper-desc" type="button" role="tab"
-                                    aria-controls="pepper pepper-desc" aria-selected="false">Pepper</button>
+                                <button class="nav-link" id="pepper-tab" data-toggle="tab" data-target="#pepper"
+                                    type="button" role="tab" aria-controls="pepper" aria-selected="false"
+                                    onclick="swap('pepper')">Pepper</button>
                             </li>
                         </ul>
                     </div>
                     <div class="card-body">
                         <div class="tab-content text-left" id="myTabContent">
-                            <div class="tab-pane fade show active" id="coke" role="tabpanel" aria-labelledby="coke-tab">
+                            <div class="tab-pane fade show active coke" id="coke" role="tabpanel"
+                                aria-labelledby="coke-tab">
                                 <h5 class="card-title">Coca Cola Model</h5>
+                                <div class="model3D mb-3">
+                                    <x3d>
+                                        <scene>
+                                            <inline url='assets/x3d/dr_pepper_animation.x3d'></inline>
+                                        </scene>
+                                    </x3d>
+                                </div>
                                 <p class="card-text">This X3D model of the coke can has been created in 3ds Max,
                                     exported to VRML97 and converted, using the instantreality transcoders, to X3D for
                                     display online.</p>
+
+
                             </div>
+
                             <div class="sprite tab-pane fade" id="sprite" role="tabpanel" aria-labelledby="sprite-tab">
                                 <h5 class="card-title">Sprite Model</h5>
+                                <div class="model3D mb-3">
+                                    <x3d>
+                                        <scene>
+                                            <inline url='assets/x3d/sprite.x3d'></inline>
+                                        </scene>
+                                    </x3d>
+                                </div>
+
                                 <p class="card-text">This X3D model of the sprite bottle has been created in 3ds Max,
                                     exported to VRML97 and converted, using the instantreality transcoders, to X3D for
                                     display online.</p>
                             </div>
+
                             <div class="pepper tab-pane fade" id="pepper" role="tabpanel" aria-labelledby="pepper-tab">
                                 <h5 class="card-title">Dr Pepper Model</h5>
-                                <p class="card-text">This X3D model of the pepper cup has been created in 3ds Max,
+                              
+                                <div class="model3D mb-3">
+                                    <x3d>
+                                        <scene>
+                                            <inline url='assets/x3d/dr_pepper_animation.x3d'></inline>
+                                        </scene>
+                                    </x3d>
+                                </div>
+                                  <p class="card-text">This X3D model of the pepper cup has been created in 3ds Max,
                                     exported to VRML97 and converted, using the instantreality transcoders, to X3D for
                                     display online.</p>
                             </div>
@@ -98,6 +129,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-md-5">
                 <div class="card h-100">
                     <h5 class="card-header">Gallery</h5>
@@ -132,8 +164,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Camera Views</h5>
                         <div class="mb-3">
-                            <button class="btn btn-success btn-sm">Default</button>
-                            <button class="btn btn-primary btn-sm">Back</button>
+                            <button class="btn btn-success btn-sm" onclick="cam1()">Default</button>
+                            <button class="btn btn-primary btn-sm" onclick="cam2()">Back</button>
                             <button class="btn btn-dark btn-sm">Left</button>
                             <button class="btn btn-dark btn-sm">Right</button>
                             <button class="btn btn-outline-secondary btn-sm">Off</button>
@@ -209,7 +241,7 @@
                     <div class="card-body">
                         <div class="tab-content" id="myTabContent2">
 
-                            <div class="tab-pane fade show active" id="coke-desc" role="tabpanel"
+                            <div class="tab-pane fade coke show active" id="coke-desc" role="tabpanel"
                                 aria-labelledby="coke-tab">
 
                                 <h4 class="card-title">History of Coca Cola</h4>
@@ -232,7 +264,8 @@
 
                             </div>
 
-                            <div class="tab-pane fade" id="sprite-desc" role="tabpanel" aria-labelledby="sprite-tab">
+                            <div class="tab-pane fade sprite" id="sprite-desc" role="tabpanel"
+                                aria-labelledby="sprite-tab">
 
                                 <h4 class="card-title">Sprite — Fanta Klare Zitrone</h4>
                                 <p class="card-text">
@@ -247,7 +280,8 @@
 
                             </div>
 
-                            <div class="tab-pane fade" id="pepper-desc" role="tabpanel" aria-labelledby="pepper-tab">
+                            <div class="tab-pane fade pepper" id="pepper-desc" role="tabpanel"
+                                aria-labelledby="pepper-tab">
 
                                 <h4 class="card-title">Dr Pepper — Liquid Sunshine</h4>
                                 <p class="card-text">
@@ -274,8 +308,8 @@
         </div>
     </main>
 
-        <!-- Contact Modal -->
-        <div class="modal fade" id="contactModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
         aria-labelledby="contactModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -286,15 +320,15 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                   Temitope Oyeyinka, BN1 9BJ
-                   <br>Email: to277@sussex.ac.uk
+                    Temitope Oyeyinka, BN1 9BJ
+                    <br>Email: to277@sussex.ac.uk
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     <form action="mailto:to277@sussex.ac.uk" method="post" enctype="text/plain">
                         <input type="submit" value="Contact Email" class="btn btn-primary">
                     </form>
-                    
+
                 </div>
             </div>
         </div>
@@ -325,9 +359,10 @@
     </footer>
 
 
-    <script src="js/jquery.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/func.js"></script>
 
     <script>
         // get the tab links
