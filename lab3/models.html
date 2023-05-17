@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca Cola</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="http://x3dom.org/release/x3dom.css" />
+    <script src="http://x3dom.org/release/x3dom.js"></script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="logo">
+                <a class="navbar-brand" href="index.html">
+                    <h1>1</h1>
+                    <h1>oca</h1>
+                    <h2>Cola</h2>
+                    <h3>Journey <span>&#8482;</span></h3>
+                    <p>Refreshing the world, one story at a time</p>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="models.html">Models <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="flex-shrink-0">
+
+        <div class="row mx-0 my-5">
+            <div class="col-md-7 mb-md-0 mb-3">
+                <div class="card h-100 text-center">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="coke-tab" data-toggle="tab"
+                                    data-target="#coke" type="button" role="tab"
+                                    aria-controls="coke" aria-selected="true" onclick="swap('coke')">Coke</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="sprite-tab" data-toggle="tab"
+                                    data-target="#sprite" type="button" role="tab"
+                                    aria-controls="sprite" aria-selected="false" onclick="swap('sprite')">Sprite</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pepper-tab" data-toggle="tab"
+                                    data-target="#pepper" type="button" role="tab"
+                                    aria-controls="pepper" aria-selected="false" onclick="swap('pepper')">Pepper</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content text-left" id="myTabContent">
+                            <div class="tab-pane fade show active coke" id="coke" role="tabpanel" aria-labelledby="coke-tab">
+                                <h5 class="card-title">Coca Cola Model</h5>
+                                <x3d x='0px' y='0px' width='50vw' height='50vh'>
+                                    <scene>
+                                        <inline url='assets/models/coke.x3d'></inline>
+                                    </scene>
+                                </x3d>
+                                <p class="card-text">This X3D model of the coke can has been created in 3ds Max,
+                                    exported to VRML97 and converted, using the instantreality transcoders, to X3D for
+                                    display online.</p>
+                            </div>
+                            <div class="sprite tab-pane fade" id="sprite" role="tabpanel" aria-labelledby="sprite-tab">
+                                <h5 class="card-title">Sprite Model</h5>
+                                <x3d x='0px' y='0px' width='50vw' height='50vh'>
+                                    <scene>
+                                        <inline url='assets/models/sprite.x3d'></inline>
+                                    </scene>
+                                </x3d>
+                                <p class="card-text">This X3D model of the sprite bottle has been created in 3ds Max,
+                                    exported to VRML97 and converted, using the instantreality transcoders, to X3D for
+                                    display online.</p>
+                            </div>
+                            <div class="pepper tab-pane fade" id="pepper" role="tabpanel" aria-labelledby="pepper-tab">
+                                <h5 class="card-title">Dr Pepper Model</h5>
+                                <x3d x='0px' y='0px' width='50vw' height='50vh'>
+                                    <scene>
+                                        <inline url='assets/models/dr_pepper_animation.x3d'></inline>
+                                    </scene>
+                                </x3d>
+                                <p class="card-text">This X3D model of the pepper cup has been created in 3ds Max,
+                                    exported to VRML97 and converted, using the instantreality transcoders, to X3D for
+                                    display online.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card h-100">
+                    <h5 class="card-header">Gallery</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">3D Images</h5>
+                        <p class="card-text">These 3D images of the Coke can, Sprite bottle and Dr Pepper cup are
+                            rendered in 3ds Max 2017 with Mental Ray</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mx-0 mb-5">
+            <div class="col-md-4 mb-md-0 mb-3">
+                <div class="card h-100">
+                    <h5 class="card-header">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Cameras
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Front</a>
+                                <a class="dropdown-item" href="#">Back</a>
+                                <a class="dropdown-item" href="#">Left</a>
+                                <a class="dropdown-item" href="#">Right</a>
+                                <a class="dropdown-item" href="#">Top</a>
+                                <a class="dropdown-item" href="#">Bottom</a>
+                            </div>
+                        </div>
+                    </h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Camera Views</h5>
+                        <div class="mb-3">
+                            <button class="btn btn-success btn-sm">Default</button>
+                            <button class="btn btn-primary btn-sm">Back</button>
+                            <button class="btn btn-dark btn-sm">Left</button>
+                            <button class="btn btn-dark btn-sm">Right</button>
+                            <button class="btn btn-outline-secondary btn-sm">Off</button>
+                        </div>
+                        <p class="card-text">These buttons select a limited range of X3D model viewpoints, use the
+                            dropdown menu for more camera views.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-3">
+                <div class="card h-100">
+                    <h5 class="card-header">
+                        <button class="btn btn-secondary">Animation</button>
+                    </h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Animation Options</h5>
+                        <div class="mb-3">
+                            <button class="btn btn-dark btn-sm">RotX</button>
+                            <button class="btn btn-dark btn-sm">RotY</button>
+                            <button class="btn btn-dark btn-sm">RotZ</button>
+                            <button class="btn btn-outline-secondary btn-sm">Stop</button>
+                        </div>
+                        <p class="card-text">These buttons select a range of X3D animation options.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <h5 class="card-header d-flex">
+                        <div class="dropdown mr-2">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Render
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Polygon</a>
+                                <a class="dropdown-item" href="#">Wireframe</a>
+                                <a class="dropdown-item" href="#">Vertex</a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-expanded="false">
+                                Lights
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Default</a>
+                                <a class="dropdown-item" href="#">Onmi On/Off</a>
+                                <a class="dropdown-item" href="#">Target On/Off</a>
+                                <a class="dropdown-item" href="#">Headlight On/Off</a>
+                            </div>
+                        </div>
+                    </h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Render and Lighting Options</h5>
+                        <div class="mb-3">
+                            <button class="btn btn-dark btn-sm">Poly</button>
+                            <button class="btn btn-dark btn-sm">Wire</button>
+                            <button class="btn btn-dark btn-sm">Headlight</button>
+                            <button class="btn btn-outline-secondary btn-sm">Default</button>
+                        </div>
+                        <p class="card-text">These buttons select a limited number of render and lighting options; use
+                            the dropdown menus for more options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mx-0 mb-5">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="tab-content" id="myTabContent2">
+
+                            <div class="tab-pane fade coke show active" id="coke-desc" role="tabpanel"
+                                aria-labelledby="coke-tab">
+
+                                <h4 class="card-title">History of Coca Cola</h4>
+                                <p class="card-text">
+                                <h5>Atlanta Beginnings</h5>
+                                It was 1886, and in New York Harbour, workers were constructing the Statue
+                                of Liberty. Eight hundred miles away, another great American symbol was about to be
+                                unveiled. Like many people who change history, John Pemberton, an Atlanta pharmacist,
+                                was
+                                inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured
+                                liquid and, when it was done, he carried it a few doors down to Jacobs' Pharmacy. Here,
+                                the
+                                mixture was combined with carbonated water and sampled by customers who all agreed -
+                                this
+                                new drink was something special. So Jacobs' Pharmacy put it on sale for five cents
+                                (about
+                                3p) a glass.</p>
+                                <a href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola"
+                                    class="btn btn-primary">Visit website</a>
+
+                            </div>
+
+                            <div class="tab-pane fade sprite" id="sprite-desc" role="tabpanel" aria-labelledby="sprite-tab">
+
+                                <h4 class="card-title">Sprite — Fanta Klare Zitrone</h4>
+                                <p class="card-text">
+                                <h5>First introduced in 1961</h5>
+                                Crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime
+                                flavoured
+                                soft drink and is sold in more than 190 different countries. Sprite Zero, part of Coca
+                                Cola's no sugar Zero range, offers the delicious lemon lime taste of Sprite without the
+                                sugar or calories.</p>
+                                <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite" class="btn btn-primary">Visit
+                                    website</a>
+
+                            </div>
+
+                            <div class="tab-pane fade pepper" id="pepper-desc" role="tabpanel" aria-labelledby="pepper-tab">
+
+                                <h4 class="card-title">Dr Pepper — Liquid Sunshine</h4>
+                                <p class="card-text">
+                                <h5>23 fruit flavours</h5>
+                                Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a
+                                century and it's still the same, with that distinctive flavour you just can't quite put
+                                your
+                                tongue on. It was created by Texas pharmacist Charles Alderton in 1885. He gave a sample
+                                of
+                                the first ever batch to Wade Morrison, a local shop owner, and Mr Morrison instantly
+                                agreed
+                                to stock the drink. The distinctive, bold taste of Dr Pepper has been popular ever
+                                since.
+                                </p>
+                                <a href="http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper"
+                                    class="btn btn-primary">Visit website</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+        <!-- Contact Modal -->
+        <div class="modal fade" id="contactModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Contact details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                   Temitope Oyeyinka, BN1 9BJ
+                   <br>Email: to277@sussex.ac.uk
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <form action="mailto:to277@sussex.ac.uk" method="post" enctype="text/plain">
+                        <input type="submit" value="Contact Email" class="btn btn-primary">
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 text-muted bg-light">
+        <div class="container">
+            <div class="float-left copyright">
+                <span>© Mobile Web 3D Applications</span>
+            </div>
+
+            <div class="float-right social">
+                <a href="#">
+                    <i class="fab fa-facebook-square fa-3x text-primary"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter-square fa-3x text-info"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-google-plus-square fa-3x text-danger"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-github-square fa-3x text-secondary"></i>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/func.js"></script>
+
+    <script>
+        // get the tab links
+        var cokeTab = document.getElementById('coke-tab');
+        var spriteTab = document.getElementById('sprite-tab');
+        var pepperTab = document.getElementById('pepper-tab');
+
+        // get the target divs
+        var cokeDesc = document.getElementById('coke-desc');
+        var spriteDesc = document.getElementById('sprite-desc');
+        var pepperDesc = document.getElementById('pepper-desc');
+
+        // add event listeners to the tab links
+        cokeTab.addEventListener('shown.bs.tab', function (event) {
+            // hide the other divs
+            spriteDesc.style.display = 'none';
+            pepperDesc.style.display = 'none';
+            // show the corresponding div
+            cokeDesc.style.display = 'block';
+        });
+
+        spriteTab.addEventListener('shown.bs.tab', function (event) {
+            // hide the other divs
+            cokeDesc.style.display = 'none';
+            pepperDesc.style.display = 'none';
+            // show the corresponding div
+            spriteDesc.style.display = 'block';
+        });
+
+        pepperTab.addEventListener('shown.bs.tab', function (event) {
+            // hide the other divs
+            cokeDesc.style.display = 'none';
+            spriteDesc.style.display = 'none';
+            // show the corresponding div
+            pepperDesc.style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>
