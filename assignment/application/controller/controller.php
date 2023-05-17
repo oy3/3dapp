@@ -9,7 +9,18 @@ class Controller {
 
         $this->load = new Load();
         $this->model = new Model();
-        $this->$pageURI();
+        // $this->$pageURI();
+
+           // Remove slashes from the $pageURI and check if method exists
+    $methodName = str_replace('/', '', $pageURI);
+    if (method_exists($this, $methodName)) {
+        $this->$methodName();
+    } else {
+        // Handle situation when method does not exist
+        // Maybe you want to load a default view or throw an error
+        $this->home(); // for example
+    }
+        
     }
 
     function home(){
