@@ -12,9 +12,9 @@
     <link href="assets/fontawesome/css/all.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-        <!-- x3dom -->
-        <link rel="stylesheet" href="assets/css/x3dom.css" />
-        <script src="assets/js/x3dom.js"></script>
+    <!-- x3dom -->
+    <link rel="stylesheet" href="assets/css/x3dom.css" />
+    <script src="assets/js/x3dom.js"></script>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -54,350 +54,389 @@
     </header>
 
     <main role="main" class="flex-shrink-0">
-    <!-- Home page -->
-    <div id="home-page" class="row mx-0">
-        <div class="col px-0">
-            <div class="container-fluid mt-3">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                        <div id="main_3d_image">
-                            <div class="h-100 d-flex justify-content-end align-items-end">
-                                <div id="main_text" class="col-xs-12 col-sm-4">
-                                    <h2>Coca Cola Great Britain</h2>
-                                    <h3>Founded by Dr John S Pemberton</h3>
-                                    <p class="display-1">The Coca Cola Company is the world's leading manufacturer, marketer
-                                        and distributor of
-                                        non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="row mt-4">
-                    <div class="col-sm-4 mb-4">
-                        <div class="card bg-light border-0 h-100 shadow-sm">
-                            <div class="card m-2">
-                                <img src="assets/images/coca_cola.jpg" class="card-img-top p-1 img-fluid" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Coca Cola</h5>
-                                <h6>New York Harbour, 1886</h6>
-                                <p class="card-text">It was 1886, John Pemberton, an Atlanta pharmacist, was inspired by
-                                    simple
-                                    curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it
-                                    was
-                                    done, the mixture was combined with carbonated water and sampled by customers who all
-                                    agreed
-                                    - this new drink was something special!</p>
-                                <a href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola" class="btn btn-primary">Find
-                                    out more...</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 ol mb-4">
-                        <div class="card bg-light border-0 h-100 shadow-sm">
-                            <div class="card m-2">
-                                <img src="assets/images/sprite.jpg" class="card-img-top p-1 img-fluid" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Sprite</h5>
-                                <h6>West Germany, 1959</h6>
-                                <p class="card-text">First introduced in 1961, crisp, refreshing, clean-tasting Sprite is
-                                    now
-                                    the world's leading lemon and lime flavoured soft drink and is sold in more than 190
-                                    different countries. Sprite Zero, part of our no sugar Zero range, offers the delicious
-                                    lemon lime taste of Sprite without the sugar or calories.</p>
-                                <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite" class="btn btn-primary">Find out
-                                    more...</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 mb-4">
-                        <div class="card bg-light border-0 h-100 shadow-sm">
-                            <div class="card m-2">
-                                <img src="assets/images/dr_pepper.jpg" class="card-img-top p-1 img-fluid" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Dr Pepper</h5>
-                                <h6>Texas, 1885</h6>
-                                <p class="card-text">Dr Pepper's unique, sparkling blend of 23 fruit flavours has been
-                                    around
-                                    for well over a century and it's still the same, with that distinctive flavour you just
-                                    can't quite put your tongue on. It was created by Texas pharmacist Charles Alderton in
-                                    1885.
-                                </p>
-                                <a href="http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper" class="btn btn-primary">Find
-                                    out more...</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About page -->
-    <div id="about-page" class="row mx-0" style="display: none;">
-        <div class="col px-0">
-            About here
-        </div>
-    </div>
-    <!-- Model page -->
-    <div id="models-page" class="row mx-0" style="display: none;">
-        <div class="col px-0">
-            <div class="row mx-0 my-5">
-                <div class="col-md-7 mb-md-0 mb-3">
-                    <div class="card h-100 text-center">
-                        <div class="card-header">
-                            <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="coke-tab" data-toggle="tab" data-target="#coke"
-                                        type="button" role="tab" aria-controls="coke" aria-selected="true"
-                                        onclick="swap('coke')">Coke</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="sprite-tab" data-toggle="tab" data-target="#sprite"
-                                        type="button" role="tab" aria-controls="sprite" aria-selected="false"
-                                        onclick="swap('sprite')">Sprite</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pepper-tab" data-toggle="tab" data-target="#pepper"
-                                        type="button" role="tab" aria-controls="pepper" aria-selected="false"
-                                        onclick="swap('pepper')">Pepper</button>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card-body">
-                            <div class="tab-content text-left" id="myTabContent">
-                                <div class="tab-pane fade show active coke" id="coke" role="tabpanel"
-                                    aria-labelledby="coke-tab">
-                                    <h5 class="card-title">Coca Cola Model</h5>
-                                    <div class="model3D mb-3">
-                                        <x3d>
-                                            <scene>
-                                                <inline url='assets/x3d/dr_pepper_animation.x3d'></inline>
-                                            </scene>
-                                        </x3d>
+        <!-- Home page -->
+        <div id="home-page" class="row mx-0">
+            <div class="col px-0">
+                <div class="container-fluid mt-3">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12">
+                            <div id="main_3d_image">
+                                <div class="h-100 d-flex justify-content-end align-items-end">
+                                    <div id="main_text" class="col-xs-12 col-sm-4">
+                                        <h2>Coca Cola Great Britain</h2>
+                                        <h3>Founded by Dr John S Pemberton</h3>
+                                        <p class="display-1">The Coca Cola Company is the world's leading manufacturer,
+                                            marketer
+                                            and distributor of
+                                            non-alcoholic beverage concentrates and syrups, and produces nearly 400
+                                            brands.</p>
                                     </div>
-                                    <p class="card-text">This X3D model of the coke can has been created in 3ds Max,
-                                        exported to VRML97 and converted, using the instantreality transcoders, to X3D for
-                                        display online.</p>
-    
-    
-                                </div>
-    
-                                <div class="sprite tab-pane fade" id="sprite" role="tabpanel" aria-labelledby="sprite-tab">
-                                    <h5 class="card-title">Sprite Model</h5>
-                                    <div class="model3D mb-3">
-                                        <x3d>
-                                            <scene>
-                                                <inline url='assets/x3d/sprite.x3d'></inline>
-                                            </scene>
-                                        </x3d>
-                                    </div>
-    
-                                    <p class="card-text">This X3D model of the sprite bottle has been created in 3ds Max,
-                                        exported to VRML97 and converted, using the instantreality transcoders, to X3D for
-                                        display online.</p>
-                                </div>
-    
-                                <div class="pepper tab-pane fade" id="pepper" role="tabpanel" aria-labelledby="pepper-tab">
-                                    <h5 class="card-title">Dr Pepper Model</h5>
-                                  
-                                    <div class="model3D mb-3">
-                                        <x3d>
-                                            <scene>
-                                                <inline url='assets/x3d/dr_pepper_animation.x3d'></inline>
-                                            </scene>
-                                        </x3d>
-                                    </div>
-                                      <p class="card-text">This X3D model of the pepper cup has been created in 3ds Max,
-                                        exported to VRML97 and converted, using the instantreality transcoders, to X3D for
-                                        display online.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-    
-                <div class="col-md-5">
-                    <div class="card h-100">
-                        <h5 class="card-header">Gallery</h5>
-                        <div class="card-body">
-                            <h5 class="card-title">3D Images</h5>
-                            <p class="card-text">These 3D images of the Coke can, Sprite bottle and Dr Pepper cup are
-                                rendered in 3ds Max 2017 with Mental Ray</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="row mx-0 mb-5">
-                <div class="col-md-4 mb-md-0 mb-3">
-                    <div class="card h-100">
-                        <h5 class="card-header">
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Cameras
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Front</a>
-                                    <a class="dropdown-item" href="#">Back</a>
-                                    <a class="dropdown-item" href="#">Left</a>
-                                    <a class="dropdown-item" href="#">Right</a>
-                                    <a class="dropdown-item" href="#">Top</a>
-                                    <a class="dropdown-item" href="#">Bottom</a>
+
+                    <div class="row mt-4">
+                        <div class="col-sm-4 mb-4">
+                            <div class="card bg-light border-0 h-100 shadow-sm">
+                                <div class="card m-2">
+                                    <img src="assets/images/coca_cola.jpg" class="card-img-top p-1 img-fluid" alt="">
                                 </div>
-                            </div>
-                        </h5>
-                        <div class="card-body">
-                            <h5 class="card-title">Camera Views</h5>
-                            <div class="mb-3">
-                                <button class="btn btn-success btn-sm" onclick="cam1()">Default</button>
-                                <button class="btn btn-primary btn-sm" onclick="cam2()">Back</button>
-                                <button class="btn btn-dark btn-sm">Left</button>
-                                <button class="btn btn-dark btn-sm">Right</button>
-                                <button class="btn btn-outline-secondary btn-sm">Off</button>
-                            </div>
-                            <p class="card-text">These buttons select a limited range of X3D model viewpoints, use the
-                                dropdown menu for more camera views.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-md-0 mb-3">
-                    <div class="card h-100">
-                        <h5 class="card-header">
-                            <button class="btn btn-secondary">Animation</button>
-                        </h5>
-                        <div class="card-body">
-                            <h5 class="card-title">Animation Options</h5>
-                            <div class="mb-3">
-                                <button class="btn btn-dark btn-sm">RotX</button>
-                                <button class="btn btn-dark btn-sm">RotY</button>
-                                <button class="btn btn-dark btn-sm">RotZ</button>
-                                <button class="btn btn-outline-secondary btn-sm">Stop</button>
-                            </div>
-                            <p class="card-text">These buttons select a range of X3D animation options.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <h5 class="card-header d-flex">
-                            <div class="dropdown mr-2">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Render
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Polygon</a>
-                                    <a class="dropdown-item" href="#">Wireframe</a>
-                                    <a class="dropdown-item" href="#">Vertex</a>
-                                </div>
-                            </div>
-    
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Lights
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Default</a>
-                                    <a class="dropdown-item" href="#">Onmi On/Off</a>
-                                    <a class="dropdown-item" href="#">Target On/Off</a>
-                                    <a class="dropdown-item" href="#">Headlight On/Off</a>
-                                </div>
-                            </div>
-                        </h5>
-                        <div class="card-body">
-                            <h5 class="card-title">Render and Lighting Options</h5>
-                            <div class="mb-3">
-                                <button class="btn btn-dark btn-sm">Poly</button>
-                                <button class="btn btn-dark btn-sm">Wire</button>
-                                <button class="btn btn-dark btn-sm">Headlight</button>
-                                <button class="btn btn-outline-secondary btn-sm">Default</button>
-                            </div>
-                            <p class="card-text">These buttons select a limited number of render and lighting options; use
-                                the dropdown menus for more options.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="row mx-0 mb-5">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="tab-content" id="myTabContent2">
-    
-                                <div class="tab-pane fade coke show active" id="coke-desc" role="tabpanel"
-                                    aria-labelledby="coke-tab">
-    
-                                    <h4 class="card-title">History of Coca Cola</h4>
-                                    <p class="card-text">
-                                    <h5>Atlanta Beginnings</h5>
-                                    It was 1886, and in New York Harbour, workers were constructing the Statue
-                                    of Liberty. Eight hundred miles away, another great American symbol was about to be
-                                    unveiled. Like many people who change history, John Pemberton, an Atlanta pharmacist,
-                                    was
-                                    inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured
-                                    liquid and, when it was done, he carried it a few doors down to Jacobs' Pharmacy. Here,
-                                    the
-                                    mixture was combined with carbonated water and sampled by customers who all agreed -
-                                    this
-                                    new drink was something special. So Jacobs' Pharmacy put it on sale for five cents
-                                    (about
-                                    3p) a glass.</p>
+                                <div class="card-body">
+                                    <h5 class="card-title">Coca Cola</h5>
+                                    <h6>New York Harbour, 1886</h6>
+                                    <p class="card-text">It was 1886, John Pemberton, an Atlanta pharmacist, was
+                                        inspired by
+                                        simple
+                                        curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and,
+                                        when it
+                                        was
+                                        done, the mixture was combined with carbonated water and sampled by customers
+                                        who all
+                                        agreed
+                                        - this new drink was something special!</p>
                                     <a href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola"
-                                        class="btn btn-primary">Visit website</a>
-    
+                                        class="btn btn-primary">Find
+                                        out more...</a>
                                 </div>
-    
-                                <div class="tab-pane fade sprite" id="sprite-desc" role="tabpanel"
-                                    aria-labelledby="sprite-tab">
-    
-                                    <h4 class="card-title">Sprite — Fanta Klare Zitrone</h4>
-                                    <p class="card-text">
-                                    <h5>First introduced in 1961</h5>
-                                    Crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime
-                                    flavoured
-                                    soft drink and is sold in more than 190 different countries. Sprite Zero, part of Coca
-                                    Cola's no sugar Zero range, offers the delicious lemon lime taste of Sprite without the
-                                    sugar or calories.</p>
-                                    <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite" class="btn btn-primary">Visit
-                                        website</a>
-    
+                            </div>
+                        </div>
+                        <div class="col-sm-4 ol mb-4">
+                            <div class="card bg-light border-0 h-100 shadow-sm">
+                                <div class="card m-2">
+                                    <img src="assets/images/sprite.jpg" class="card-img-top p-1 img-fluid" alt="">
                                 </div>
-    
-                                <div class="tab-pane fade pepper" id="pepper-desc" role="tabpanel"
-                                    aria-labelledby="pepper-tab">
-    
-                                    <h4 class="card-title">Dr Pepper — Liquid Sunshine</h4>
-                                    <p class="card-text">
-                                    <h5>23 fruit flavours</h5>
-                                    Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a
-                                    century and it's still the same, with that distinctive flavour you just can't quite put
-                                    your
-                                    tongue on. It was created by Texas pharmacist Charles Alderton in 1885. He gave a sample
-                                    of
-                                    the first ever batch to Wade Morrison, a local shop owner, and Mr Morrison instantly
-                                    agreed
-                                    to stock the drink. The distinctive, bold taste of Dr Pepper has been popular ever
-                                    since.
+                                <div class="card-body">
+                                    <h5 class="card-title">Sprite</h5>
+                                    <h6>West Germany, 1959</h6>
+                                    <p class="card-text">First introduced in 1961, crisp, refreshing, clean-tasting
+                                        Sprite is
+                                        now
+                                        the world's leading lemon and lime flavoured soft drink and is sold in more than
+                                        190
+                                        different countries. Sprite Zero, part of our no sugar Zero range, offers the
+                                        delicious
+                                        lemon lime taste of Sprite without the sugar or calories.</p>
+                                    <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite"
+                                        class="btn btn-primary">Find out
+                                        more...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 mb-4">
+                            <div class="card bg-light border-0 h-100 shadow-sm">
+                                <div class="card m-2">
+                                    <img src="assets/images/dr_pepper.jpg" class="card-img-top p-1 img-fluid" alt="">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Dr Pepper</h5>
+                                    <h6>Texas, 1885</h6>
+                                    <p class="card-text">Dr Pepper's unique, sparkling blend of 23 fruit flavours has
+                                        been
+                                        around
+                                        for well over a century and it's still the same, with that distinctive flavour
+                                        you just
+                                        can't quite put your tongue on. It was created by Texas pharmacist Charles
+                                        Alderton in
+                                        1885.
                                     </p>
                                     <a href="http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper"
-                                        class="btn btn-primary">Visit website</a>
-    
+                                        class="btn btn-primary">Find
+                                        out more...</a>
                                 </div>
-    
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <!-- About page -->
+        <div id="about-page" class="row mx-0" style="display: none;">
+            <div class="col px-0">
+                About here
+            </div>
+        </div>
+        <!-- Model page -->
+        <div id="models-page" class="row mx-0" style="display: none;">
+            <div class="col px-0">
+                <div class="row mx-0 my-5">
+                    <div class="col-md-7 mb-md-0 mb-3">
+                        <div class="card h-100 text-center">
+                            <div class="card-header">
+                                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="coke-tab" data-toggle="tab"
+                                            data-target="#coke" type="button" role="tab" aria-controls="coke"
+                                            aria-selected="true" onclick="swap('coke')">Coke</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="sprite-tab" data-toggle="tab" data-target="#sprite"
+                                            type="button" role="tab" aria-controls="sprite" aria-selected="false"
+                                            onclick="swap('sprite')">Sprite</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pepper-tab" data-toggle="tab" data-target="#pepper"
+                                            type="button" role="tab" aria-controls="pepper" aria-selected="false"
+                                            onclick="swap('pepper')">Pepper</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <div class="tab-content text-left" id="myTabContent">
+                                    <div class="tab-pane fade show active coke" id="coke" role="tabpanel"
+                                        aria-labelledby="coke-tab">
+                                        <h5 class="card-title">Coca Cola Model</h5>
+                                        <div class="model3D mb-3">
+                                            <x3d>
+                                                <scene>
+                                                    <inline url='assets/x3d/dr_pepper_animation.x3d'></inline>
+                                                </scene>
+                                            </x3d>
+                                        </div>
+                                        <p class="card-text">This X3D model of the coke can has been created in 3ds Max,
+                                            exported to VRML97 and converted, using the instantreality transcoders, to
+                                            X3D for
+                                            display online.</p>
+
+
+                                    </div>
+
+                                    <div class="sprite tab-pane fade" id="sprite" role="tabpanel"
+                                        aria-labelledby="sprite-tab">
+                                        <h5 class="card-title">Sprite Model</h5>
+                                        <div class="model3D mb-3">
+                                            <x3d>
+                                                <scene>
+                                                    <inline url='assets/x3d/sprite.x3d'></inline>
+                                                </scene>
+                                            </x3d>
+                                        </div>
+
+                                        <p class="card-text">This X3D model of the sprite bottle has been created in 3ds
+                                            Max,
+                                            exported to VRML97 and converted, using the instantreality transcoders, to
+                                            X3D for
+                                            display online.</p>
+                                    </div>
+
+                                    <div class="pepper tab-pane fade" id="pepper" role="tabpanel"
+                                        aria-labelledby="pepper-tab">
+                                        <h5 class="card-title">Dr Pepper Model</h5>
+
+                                        <div class="model3D mb-3">
+                                            <x3d>
+                                                <scene>
+                                                    <inline url='assets/x3d/dr_pepper_animation.x3d'></inline>
+                                                </scene>
+                                            </x3d>
+                                        </div>
+                                        <p class="card-text">This X3D model of the pepper cup has been created in 3ds
+                                            Max,
+                                            exported to VRML97 and converted, using the instantreality transcoders, to
+                                            X3D for
+                                            display online.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="card h-100">
+                            <h5 class="card-header">Gallery</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">3D Images</h5>
+                                <p class="card-text">These 3D images of the Coke can, Sprite bottle and Dr Pepper cup
+                                    are
+                                    rendered in 3ds Max 2017 with Mental Ray</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mx-0 mb-5">
+                    <div class="col-md-4 mb-md-0 mb-3">
+                        <div class="card h-100">
+                            <h5 class="card-header">
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-toggle="dropdown" aria-expanded="false">
+                                        Cameras
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Front</a>
+                                        <a class="dropdown-item" href="#">Back</a>
+                                        <a class="dropdown-item" href="#">Left</a>
+                                        <a class="dropdown-item" href="#">Right</a>
+                                        <a class="dropdown-item" href="#">Top</a>
+                                        <a class="dropdown-item" href="#">Bottom</a>
+                                    </div>
+                                </div>
+                            </h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Camera Views</h5>
+                                <div class="mb-3">
+                                    <button class="btn btn-success btn-sm" onclick="cam1()">Default</button>
+                                    <button class="btn btn-primary btn-sm" onclick="cam2()">Back</button>
+                                    <button class="btn btn-dark btn-sm">Left</button>
+                                    <button class="btn btn-dark btn-sm">Right</button>
+                                    <button class="btn btn-outline-secondary btn-sm">Off</button>
+                                </div>
+                                <p class="card-text">These buttons select a limited range of X3D model viewpoints, use
+                                    the
+                                    dropdown menu for more camera views.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-md-0 mb-3">
+                        <div class="card h-100">
+                            <h5 class="card-header">
+                                <button class="btn btn-secondary">Animation</button>
+                            </h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Animation Options</h5>
+                                <div class="mb-3">
+                                    <button class="btn btn-dark btn-sm">RotX</button>
+                                    <button class="btn btn-dark btn-sm">RotY</button>
+                                    <button class="btn btn-dark btn-sm">RotZ</button>
+                                    <button class="btn btn-outline-secondary btn-sm">Stop</button>
+                                </div>
+                                <p class="card-text">These buttons select a range of X3D animation options.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <h5 class="card-header d-flex">
+                                <div class="dropdown mr-2">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-toggle="dropdown" aria-expanded="false">
+                                        Render
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Polygon</a>
+                                        <a class="dropdown-item" href="#">Wireframe</a>
+                                        <a class="dropdown-item" href="#">Vertex</a>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        data-toggle="dropdown" aria-expanded="false">
+                                        Lights
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Default</a>
+                                        <a class="dropdown-item" href="#">Onmi On/Off</a>
+                                        <a class="dropdown-item" href="#">Target On/Off</a>
+                                        <a class="dropdown-item" href="#">Headlight On/Off</a>
+                                    </div>
+                                </div>
+                            </h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Render and Lighting Options</h5>
+                                <div class="mb-3">
+                                    <button class="btn btn-dark btn-sm">Poly</button>
+                                    <button class="btn btn-dark btn-sm">Wire</button>
+                                    <button class="btn btn-dark btn-sm">Headlight</button>
+                                    <button class="btn btn-outline-secondary btn-sm">Default</button>
+                                </div>
+                                <p class="card-text">These buttons select a limited number of render and lighting
+                                    options; use
+                                    the dropdown menus for more options.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mx-0 mb-5">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="tab-content" id="myTabContent2">
+
+                                    <div class="tab-pane fade coke show active" id="coke-desc" role="tabpanel"
+                                        aria-labelledby="coke-tab">
+
+                                        <h4 class="card-title">History of Coca Cola</h4>
+                                        <p class="card-text">
+                                        <h5>Atlanta Beginnings</h5>
+                                        It was 1886, and in New York Harbour, workers were constructing the Statue
+                                        of Liberty. Eight hundred miles away, another great American symbol was about to
+                                        be
+                                        unveiled. Like many people who change history, John Pemberton, an Atlanta
+                                        pharmacist,
+                                        was
+                                        inspired by simple curiosity. One afternoon, he stirred up a fragrant,
+                                        caramel-coloured
+                                        liquid and, when it was done, he carried it a few doors down to Jacobs'
+                                        Pharmacy. Here,
+                                        the
+                                        mixture was combined with carbonated water and sampled by customers who all
+                                        agreed -
+                                        this
+                                        new drink was something special. So Jacobs' Pharmacy put it on sale for five
+                                        cents
+                                        (about
+                                        3p) a glass.</p>
+                                        <a href="http://www.coca-cola.co.uk/drinks/coca-cola/coca-cola"
+                                            class="btn btn-primary">Visit website</a>
+
+                                    </div>
+
+                                    <div class="tab-pane fade sprite" id="sprite-desc" role="tabpanel"
+                                        aria-labelledby="sprite-tab">
+
+                                        <h4 class="card-title">Sprite — Fanta Klare Zitrone</h4>
+                                        <p class="card-text">
+                                        <h5>First introduced in 1961</h5>
+                                        Crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and
+                                        lime
+                                        flavoured
+                                        soft drink and is sold in more than 190 different countries. Sprite Zero, part
+                                        of Coca
+                                        Cola's no sugar Zero range, offers the delicious lemon lime taste of Sprite
+                                        without the
+                                        sugar or calories.</p>
+                                        <a href="http://www.coca-cola.co.uk/drinks/sprite/sprite"
+                                            class="btn btn-primary">Visit
+                                            website</a>
+
+                                    </div>
+
+                                    <div class="tab-pane fade pepper" id="pepper-desc" role="tabpanel"
+                                        aria-labelledby="pepper-tab">
+
+                                        <h4 class="card-title">Dr Pepper — Liquid Sunshine</h4>
+                                        <p class="card-text">
+                                        <h5>23 fruit flavours</h5>
+                                        Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for
+                                        well over a
+                                        century and it's still the same, with that distinctive flavour you just can't
+                                        quite put
+                                        your
+                                        tongue on. It was created by Texas pharmacist Charles Alderton in 1885. He gave
+                                        a sample
+                                        of
+                                        the first ever batch to Wade Morrison, a local shop owner, and Mr Morrison
+                                        instantly
+                                        agreed
+                                        to stock the drink. The distinctive, bold taste of Dr Pepper has been popular
+                                        ever
+                                        since.
+                                        </p>
+                                        <a href="http://www.coca-cola.co.uk/drinks/dr-pepper/dr-pepper"
+                                            class="btn btn-primary">Visit website</a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -499,6 +538,28 @@
             // show the corresponding div
             pepperDesc.style.display = 'block';
         });
+    </script>
+
+    <script>
+        function swapPage(selected) {
+            var home = document.querySelector('#home-page');
+            var about = document.querySelector('#about-page');
+            var models = document.querySelector('#models-page');
+
+            home.style.display = "none";
+            about.style.display = "none";
+            models.style.display = "none";
+
+            document.getElementById(selected).style.display = "block";
+
+            // Add active class to the clicked nav item
+            var navItems = document.querySelectorAll('.nav-item');
+            navItems.forEach(function (item) {
+                item.classList.remove('active');
+            });
+            var selectedNavItem = document.querySelector(`a[href="javascript:swapPage('${selected}')"]`).parentNode;
+            selectedNavItem.classList.add('active');
+        }
     </script>
 </body>
 

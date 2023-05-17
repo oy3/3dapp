@@ -1,0 +1,260 @@
+@font-face {
+    font-family: cocaColaFont;
+    src: url(../assets/fonts/LOKICOLA.TTF);
+}
+
+@font-face {
+    font-family: cocaColaFont;
+    src: url(../assets/fonts/LOKICOLA.TTF);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../assets/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(../assets/fonts/Oswald-Regular.ttf);
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: cocaColaFont; */
+}
+
+#main_3d_image,
+#main_text,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.img-thumbnail {}
+
+main h5 {
+    font-family: 'Oswald', sans-serif;
+}
+
+#main_3d_image {
+    font-family: 'Oswald', sans-serif;
+    background-image: url(../assets/images/site_images/main_3D.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+
+#main_text {
+    width: 80%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    margin-right: 5%;
+}
+
+#main_text h2 {
+    color: rgba(0, 102, 153, 1);
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#main_text h3 {
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: darkcyan;
+}
+
+#main_text p {
+    font-size: 15px;
+    margin: 0px;
+    line-height: 1.2;
+}
+
+.logo {
+    margin-top: 3px;
+}
+
+.logo h1 {
+    font-family: cocaColaFont;
+    font-size: 41px;
+    margin: 0;
+    margin-top: 0px;
+    margin-bottom: -15px;
+    float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 2px;
+}
+
+.logo h2 {
+    font-family: cocaColaFont;
+    font-size: 41px;
+    margin-top: 5px;
+    margin-bottom: -15px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 3px;
+    float: left;
+}
+
+.logo h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 31px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    padding-top: 0px;
+    padding-left: 5px;
+    float: left;
+}
+
+.logo h3 span {
+    font-size: 15px;
+    margin-left: -5px;
+}
+
+.logo p {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+/* CSS rule to style the footer */
+.footer {
+    /* position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px; */
+}
+
+.navbar-text>a {
+    /* font-size: 10px; */
+}
+
+.navbar-text>span {
+    /* color: rgb(255, 255, 255); */
+    font-size: 14px;
+    /* text-decoration: none; */
+}
+
+.copyright {
+    font-size: 10px;
+}
+
+.social {}
+
+.social i {
+    font-size: 20px;
+}
+
+.footer p {
+    display: none;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    /* CSS rule to style the footer */
+    .footer {
+        /* background-color: #257600;
+        height: 60px; */
+    }
+
+    .navbar-text>a {}
+
+    .navbar-text>span {
+        /* color: rgb(228, 75, 15); */
+        font-size: 15px;
+    }
+
+    .footer p {
+        display: block;
+    }
+
+    .copyright {
+        font-size: 15px;
+    }
+
+    .social i {
+        font-size: 30px;
+    }
+}
+
+.model3D {
+    /* border: 1px solid blue; */
+    background-color: lightgray;
+    height: 250px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .model3D {
+        background-color: lightgray;
+        height: 400px;
+    }
+}
+
+/* Override x3dom.css styles */
+X3D,
+x3d {
+    /* position: relative;
+    float: left; */
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+}
+
+.x3dom-progress {
+    display: none !important;
+}
+
+.gallery #image_thumbnail {
+    max-width: 43%;
+    height: auto;
+    padding: 0.25rem;
+    margin: 2px;
+}
+
+.float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #0C9;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.custom-float {
+    margin-top: 22px;
+}
