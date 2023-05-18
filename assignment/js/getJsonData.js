@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
     $.getJSON('./application/model/data.json', function (jsonObj) {
-        console.log(jsonObj);
 
         $('#home_link').html(jsonObj.pageButtonData[0].home);
         $('#about_link').html(jsonObj.pageButtonData[0].about);

@@ -38,7 +38,7 @@ function wireframe() {
     var e = document.getElementById(model + 'X3D');
     e.runtime.togglePoints(true);
     e.runtime.togglePoints(true);
-    isPointsToggled = false;
+    // isPointsToggled = false;
 
 }
 

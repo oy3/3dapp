@@ -10,8 +10,8 @@ class Controller {
         $this->load = new Load();
         $this->model = new Model();
         // $this->$pageURI();
-
-           // Remove slashes from the $pageURI and check if method exists
+    
+    // Remove slashes from the $pageURI and check if method exists
     $methodName = str_replace('/', '', $pageURI);
     if (method_exists($this, $methodName)) {
         $this->$methodName();

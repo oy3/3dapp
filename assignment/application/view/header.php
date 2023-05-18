@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
 
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../assignment/css/bootstrap.css" crossorigin="anonymous">
+    <link rel="stylesheet" type='text/css' href="./css/style.css">
     <link href="./assets/fontawesome/css/all.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <!-- x3dom -->
-    <link rel="stylesheet" href="./css/x3dom.css" />
+    <link rel="stylesheet" href="./css/x3dom.css" crossorigin="anonymous"/>
 
     <!-- Fancybox -->
     <link rel="stylesheet" href="./assets/fancybox/fancybox.css" />
